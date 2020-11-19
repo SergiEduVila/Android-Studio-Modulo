@@ -3,6 +3,7 @@ package com.example.lifecycle;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -16,15 +17,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         Log.d(LOG_TAG,"-----");
         Log.d(LOG_TAG,"onCreate");
     }
-
+/*
     public void Act2On(View v){
         Intent intent=new Intent(this,SecondActivity.class);
         startActivityForResult(intent,1);
     }
-
+*/
     public void onClick(View v){
         Intent intent=new Intent(this,SecondActivity.class);
         startActivityForResult(intent,1);

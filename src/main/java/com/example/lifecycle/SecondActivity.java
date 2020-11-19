@@ -1,5 +1,6 @@
 package com.example.lifecycle;
 
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.util.Log;
 
@@ -14,6 +15,7 @@ public class SecondActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         Log.d(LOG_TAG, "----------");
         Log.d(LOG_TAG, "onCreate: ");
     }

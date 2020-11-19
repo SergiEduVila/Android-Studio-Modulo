@@ -24,7 +24,6 @@
     <Button
         android:layout_width="156dp"
         android:layout_height="105dp"
-        android:onClick="Act2On"
         android:text="Button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
